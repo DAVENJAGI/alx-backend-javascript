@@ -4,7 +4,7 @@
  * id: Number
  * firstName: string
  * location: String
- * } studentList 
+ * } studentList - list of students
  * @returns 
  */
 export default function getListStudents(studentList) {
