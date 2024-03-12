@@ -1,7 +1,16 @@
-export default function getStudentsByLocation (studentList, city) {
-    if (!Array.isArray(studentList)) {
-        return [];
-    } else {
-        return studentList.filter(student => student.location === city);
-    }
+/**
+ * Fetches students record in a given location.
+ * @param {{
+*   id: Number,
+*   firstName: String,
+*   location: String
+* }[]} students - The list of students.
+* @param {String} city - The location.
+* @returns
+*/
+export default function getStudentsByLocation(students, city) {
+ if (students instanceof Array) {
+   return students.filter((student) => student.location === city);
+ }
+ return [];
 }
