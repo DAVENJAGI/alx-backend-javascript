@@ -1,5 +1,5 @@
 /**
- * 
+ * Fetches student's ids
  * @param {{
  * id: Number
  * firstName: string
