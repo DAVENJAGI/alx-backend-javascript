@@ -1,10 +1,10 @@
 /**
  * 
- * @param {
+ * @param {{
  * id: Number
  * firstName: string
  * location: String
- * } studentList - list of students
+ * } []}studentList - list of students
  * @returns 
  */
 export default function getListStudentIds(studentList) {
