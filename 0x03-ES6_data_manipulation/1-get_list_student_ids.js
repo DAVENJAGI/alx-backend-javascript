@@ -8,9 +8,8 @@
  * @returns 
  */
 export default function getListStudents(studentList) {
-  if (!Array.isArray(studentList)){
-        return [];
-  } else {
-    return studentList.map(student => student.id);
+  if (studentList instanceof Array) {
+    return studentList.map((student) => student.id);
   }
+  return [];
 }
