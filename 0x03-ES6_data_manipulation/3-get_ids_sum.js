@@ -1,7 +1,18 @@
-function getStudentIdsSum (studentList) {
-    if (!Array.isArray(studentList)) {
-        return 0;
-    } else {
-        return studentList.reduce((accumulator, student) => accumulator + student.id, 0);
-    }
+/**
+ * 
+ * @param {{
+ * id: Number,
+ * firstName: String,
+ * location: String
+ * } []} studentList - student list
+ * @returns 
+ */
+export default function getStudentIdsSum(students) {
+  if (students instanceof Array) {
+    return students.reduce(
+      (prevStudent, curStudent) => prevStudent.id || prevStudent + curStudent.id,
+      0,
+    );
+  }
+  return 0;
 }
