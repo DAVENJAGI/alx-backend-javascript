@@ -4,22 +4,13 @@
  * @param {Number} position - The position to modify.
  * @param {Number} value - The value to be stored in the position.
  * @author DAVENJAGI <https://github.com/DAVENJAGI>
- * @returns {DataView}
+ * @returns
  */
-export default function createInt8TypedArray() {
-  if (typeof length !== 'number' || typeof position !== 'number' || typeof value !== 'number') {
-    throw new TypeError('Invalid input types: all arguments must be numbers');
+export default function createInt8TypedArray(length, position, value) {
+  if (position >= length) {
+    throw new Error('Position outside range');
   }
-
-  if (position < 0 || position >= length) {
-    throw new RangeError('Position outside range: position must be between 0 and length-1');
-  }
-
-  const buffer = new ArrayBuffer(length);
-
-  const int8View = new Int8Array(buffer);
-
-  int8View[position] = value;
-
-  return buffer;
+  const buf = new DataView(new ArrayBuffer(length), 0, length);
+  buf.setInt8(position, value);
+  return buf;
 }
