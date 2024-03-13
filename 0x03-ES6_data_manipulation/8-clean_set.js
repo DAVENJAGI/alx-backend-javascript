@@ -1,4 +1,9 @@
-/** */
+/**
+ * 
+ * @param {*} mySet 
+ * @param {*} startString 
+ * @returns 
+ */
 export default function cleanSet(mySet, startString) {
   const parts = [];
   if (!mySet || !startString || !(mySet instanceof Set) || typeof startString !== 'string') {
