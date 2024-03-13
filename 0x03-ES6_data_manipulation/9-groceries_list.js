@@ -3,12 +3,12 @@
  * @returns {Map<string, Number>}
  */
 export default function groceriesList() {
-  const groceries = new Map [
+  const groceries = [
     ['Apples', 10],
     ['Tomatoes', 10],
     ['Pasta', 1],
     ['Rice', 1],
-    ['Banana', 5]
+    ['Banana', 5],
   ];
-  return (groceries);
+  return new Map(groceries);
 }
