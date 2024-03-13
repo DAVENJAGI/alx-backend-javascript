@@ -1,5 +1,5 @@
 /**
- * 
+ * Returns a string of all set values
  * @param {*} mySet 
  * @param {*} startString 
  * @returns 
