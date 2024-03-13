@@ -8,9 +8,9 @@ export default function updateUniqueItems(groceriesMap) {
     throw new TypeError('Cannot process: argument must be a Map');
   }
   
-  map.forEach((value, key) => {
+  groceriesMap.forEach((value, key) => {
     if (value === 1) {
-      map.set(key, 100);
+      groceriesMap.set(key, 100);
     }
   });
 }
