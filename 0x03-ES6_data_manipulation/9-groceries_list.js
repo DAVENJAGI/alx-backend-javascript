@@ -1,5 +1,5 @@
 /**
- * Fetchws a man of grocery and their values
+ * Fetches a map of grocery and their values
  * @returns 
  */
 export default function groceriesList() {
