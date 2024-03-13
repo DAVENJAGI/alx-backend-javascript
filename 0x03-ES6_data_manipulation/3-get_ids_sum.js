@@ -1,9 +1,9 @@
 /**
  * Retuens sum of all IDs
  * @param {{
- * id: Number,
- * firstName: String,
- * location: String
+ *   id: Number,
+ *   firstName: String,
+ *   location: String
  * } []} studentList - student list
  * @returns 
  */
