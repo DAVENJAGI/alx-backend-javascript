@@ -1,8 +1,10 @@
 /**
- * RETURNS A SET FROM AN ARRAY
- * @param {ARRAY} arr - Array
- * @returns 
+ * Creates a set from an array.
+
+ * @param {Array} array - The source arr.
+
+ * @returns {Set}
  */
-export default function setFromArray(array) {
-  return new Set(array);
+export default function setFromArray(arr) {
+  return new Set(arr);
 }
