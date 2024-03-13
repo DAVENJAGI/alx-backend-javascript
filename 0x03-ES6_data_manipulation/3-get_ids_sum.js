@@ -1,5 +1,5 @@
 /**
- * 
+ * Retuens sum of all IDs
  * @param {{
  * id: Number,
  * firstName: String,
