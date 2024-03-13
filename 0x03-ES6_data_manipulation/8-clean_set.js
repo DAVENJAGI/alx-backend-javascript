@@ -1,11 +1,17 @@
-function cleanSet(mySet, startString) {
-  if (!mySet instanceof Set || typeof startString !== 'string') {
-    throw new TypeError('Invalid input types: set must be a Set and startString must be a string');
+/** */
+export default function cleanSet(mySet, startString) {
+  const parts = [];
+  if (!mySet || !startString || !(mySet instanceof Set) || typeof startString !== 'string') {
+    return '';
   }
-  
-  const filteredValues = Array.from(mySet)
-    .filter(value => value.startsWith(startString))
-    .map(value => value.substring(startString.length));
-  
-  return filteredValues.join('-') || ''; // Return empty string if no matches
+  for (const value of set.values()) {
+    if (typeof value === 'string' && value.startsWith(startString)) {
+      const valueSubStr = value.substring(startString.length);
+
+      if (valueSubStr && valueSubStr !== value) {
+        parts.push(valueSubStr);
+      }
+    }
+  }
+  return parts.join('-');
 }
