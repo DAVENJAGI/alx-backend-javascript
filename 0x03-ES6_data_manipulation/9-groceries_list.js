@@ -1,4 +1,8 @@
-function groceriesList() {
+/**
+ * Fetchws a man of grocery and their values
+ * @returns 
+ */
+export default function groceriesList() {
     const groceries = new Map ([
         ['Apples', 10],
         ['Tomatoes', 10],
