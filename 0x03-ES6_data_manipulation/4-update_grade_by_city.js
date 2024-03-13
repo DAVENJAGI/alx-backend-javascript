@@ -1,16 +1,16 @@
 /**
- * 
+ * Updates the grade of students in a list for a given city.
  * @param {{
- *  id: Number,
- *  firstName: String,
- *  location: String
- * }[]} studentList - student list
- * @param {*} city - city of students
+ *   id: Number,
+ *   firstName: String,
+ *   location: String
+ * }[]} students - student lists.
+ * @param {*} city - The city of students.
  * @param {{
  *   studentId: Number,
  *   grade: Number,
- * }[]} newGrades - students grade 
- * @returns 
+ * }[]} newGrades - Students New grade.
+ * @returns {{id: Number, firstName: String, location: String}[]}
  */
 export default function updateStudentGradeByCity(students, city, newGrades) {
   const defaultGrade = { grade: 'N/A' };
